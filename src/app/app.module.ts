@@ -14,6 +14,11 @@ import { HomeComponent } from './home/home.component';
 import { NuclearComponent } from './nuclear/nuclear.component';
 import { TornadoComponent } from './tornado/tornado.component';
 
+// <--Import these modules-->
+import { HttpService } from './http.service';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +35,13 @@ import { TornadoComponent } from './tornado/tornado.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // <--Add these-->
+    FormsModule,
+    HttpClientModule
+    // <--Add these-->
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

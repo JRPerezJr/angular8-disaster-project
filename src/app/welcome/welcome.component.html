@@ -7,13 +7,23 @@
 
       <div class="col">
         <button type="button" class="rounded mx-auto d-block" class="btn btn-outline-danger startButton"
-          style="align-content: center" [routerLink]="['/disaster/home']">GET STARTED</button>
+          style="align-content: center" [routerLink]="['/public/home']">GET STARTED</button>
         <br>
         <p class="p1" style="text-align: center">
           Be prepared
-          <span class="span1" style="text-align: center">
-            DISASTER WARNING
-          </span>
+          <svg viewBox="0 0 600 100">
+            <symbol id="s-text">
+              <text text-anchor="middle" x="50%" y="50%" dy=".45em">disaster warning</text>
+            </symbol>
+
+            <use class="text" xlink:href="#s-text"></use>
+            <use class="text" xlink:href="#s-text"></use>
+            <use class="text" xlink:href="#s-text"></use>
+            <use class="text" xlink:href="#s-text"></use>
+            <use class="text" xlink:href="#s-text"></use>
+
+          </svg>
+
           &mdash; Before, During and After &mdash;
         </p>
       </div>
